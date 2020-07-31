@@ -494,6 +494,7 @@
   </div>
 </template>
 <script>
+import { mapState, mapActions } from "vuex";
 export default {
   head() {
     return {
@@ -534,142 +535,142 @@ export default {
           img: require("@/static/img/pizza.png"),
         },
       ],
-      menu: [
-        {
-          id: "",
-          name: "Hawaiiana",
-          description: "Jamón, piña cereza, ex. queso",
-        },
-        {
-          id: "",
-          name: "pepperoni",
-          description: "Extra pepperoni extra queso",
-        },
-        {
-          id: "",
-          name: "vegetariana",
-          description: "Champiñon, piña, pimiento,cebolla",
-        },
-        {
-          id: "",
-          name: "Ranchera",
-          description: "Frijol, chorizo, cebolla,jalapeño",
-        },
-        {
-          id: "",
-          name: "Carnes frias",
-          description: "Jamón, salchicha, salami, pepperoni ",
-        },
-        {
-          id: "",
-          name: "Burguer",
-          description: "C. molida, salami, tocino, q. amarillo",
-        },
-        {
-          id: "",
-          name: "Mexicana",
-          description: "Chorizo. c. molida, jalapeño, tocino",
-        },
-        {
-          id: "",
-          name: "Del mar",
-          description: "Camaron, atun, pimiento, ex. queso",
-        },
-        {
-          id: "",
-          name: "Chickén",
-          description: "Jamón, pollo, champion, ex. queso",
-        },
-        {
-          id: "",
-          name: "A la diabla",
-          description: "C. pastor, chipotle, jalapeño, chorizo",
-        },
-        {
-          id: "",
-          name: "Cordón blue",
-          description: "Pollo, jamón, tocino, q. amarillo",
-        },
-        {
-          id: "",
-          name: "Emperatriz",
-          description: "Pepperoni, pimiento, c. molida, tocina",
-        },
-        {
-          id: "",
-          name: "Marina",
-          description: "Atún, elote, pimiento, cebolla",
-        },
-        {
-          id: "",
-          name: "Norteña",
-          description: "Chorizo, tocino, pimiento, elote",
-        },
-        {
-          id: "",
-          name: "Romana",
-          description: "Champoñon, chorizo, jalapeño, tocino",
-        },
-        {
-          id: "",
-          name: "Cubana",
-          description: "Jamón, tocino, chorizo, q. amarillo",
-        },
-        {
-          id: "",
-          name: "4 quesos",
-          description: "Mozarella, oaxaca, americano, gouda",
-        },
-        {
-          id: "",
-          name: "Kanter",
-          description: "Champiñon, tocino, salami, peperoni",
-        },
-        {
-          id: "",
-          name: "Pastor",
-          description: "C. pator, piña, cebolla, tocino",
-        },
-        {
-          id: "",
-          name: "Hawaiiana VIP",
-          description: "Jamón, piña, jalapeño, tocino",
-        },
-        {
-          id: "",
-          name: "Italiana",
-          description: "Jamon, salchicha, salami, pimiento",
-        },
-        {
-          id: "",
-          name: "Al gusto",
-          description: "4 ingredientes al gusto",
-        },
-        {
-          id: "",
-          name: "Combinación pizza suprema",
-          description: "Pruebala!",
-          newProduct: true,
-        },
-        {
-          id: "",
-          name: "Alitas",
-          description: "adobadas, a la brava, búfalo, mango habanero",
-          img: require("@/static/img/alitas.png"),
-        },
-        {
-          id: "",
-          name: "Papas a las francesa",
-          description: "yum!",
-          img: require("@/static/img/papasFrancesa.png"),
-        },
-        {
-          id: "",
-          name: "Papas en gajos",
-          description: "yum!",
-          img: require("@/static/img/papasGajo.png"),
-        },
-      ],
+      // menu: [
+      //   {
+      //     id: "",
+      //     name: "Hawaiiana",
+      //     description: "Jamón, piña cereza, ex. queso",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "pepperoni",
+      //     description: "Extra pepperoni extra queso",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "vegetariana",
+      //     description: "Champiñon, piña, pimiento,cebolla",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Ranchera",
+      //     description: "Frijol, chorizo, cebolla,jalapeño",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Carnes frias",
+      //     description: "Jamón, salchicha, salami, pepperoni ",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Burguer",
+      //     description: "C. molida, salami, tocino, q. amarillo",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Mexicana",
+      //     description: "Chorizo. c. molida, jalapeño, tocino",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Del mar",
+      //     description: "Camaron, atun, pimiento, ex. queso",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Chickén",
+      //     description: "Jamón, pollo, champion, ex. queso",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "A la diabla",
+      //     description: "C. pastor, chipotle, jalapeño, chorizo",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Cordón blue",
+      //     description: "Pollo, jamón, tocino, q. amarillo",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Emperatriz",
+      //     description: "Pepperoni, pimiento, c. molida, tocina",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Marina",
+      //     description: "Atún, elote, pimiento, cebolla",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Norteña",
+      //     description: "Chorizo, tocino, pimiento, elote",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Romana",
+      //     description: "Champoñon, chorizo, jalapeño, tocino",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Cubana",
+      //     description: "Jamón, tocino, chorizo, q. amarillo",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "4 quesos",
+      //     description: "Mozarella, oaxaca, americano, gouda",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Kanter",
+      //     description: "Champiñon, tocino, salami, peperoni",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Pastor",
+      //     description: "C. pator, piña, cebolla, tocino",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Hawaiiana VIP",
+      //     description: "Jamón, piña, jalapeño, tocino",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Italiana",
+      //     description: "Jamon, salchicha, salami, pimiento",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Al gusto",
+      //     description: "4 ingredientes al gusto",
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Combinación pizza suprema",
+      //     description: "Pruebala!",
+      //     newProduct: true,
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Alitas",
+      //     description: "adobadas, a la brava, búfalo, mango habanero",
+      //     img: require("@/static/img/alitas.png"),
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Papas a las francesa",
+      //     description: "yum!",
+      //     img: require("@/static/img/papasFrancesa.png"),
+      //   },
+      //   {
+      //     id: "",
+      //     name: "Papas en gajos",
+      //     description: "yum!",
+      //     img: require("@/static/img/papasGajo.png"),
+      //   },
+      // ],
       patternSelect: "pattern1",
       responsiveCarousel: {
         0: { items: 1 },
@@ -679,6 +680,9 @@ export default {
     };
   },
   methods: {
+    ...mapActions({
+      getPizzas: "pizza/getPizzas",
+    }),
     prueba() {
       console.info("pruebisima");
     },
@@ -690,6 +694,14 @@ export default {
       });
       element.classList.toggle("open");
     },
+  },
+  mounted() {
+    this.getPizzas();
+  },
+  computed: {
+    ...mapState({
+      menu: ({ pizza }) => pizza.all,
+    }),
   },
 };
 </script>
