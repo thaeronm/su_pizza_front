@@ -497,7 +497,7 @@
 export default {
   head() {
     return {
-      titleTemplate: "Su pizza | Del horno a tu casa"
+      titleTemplate: "Su pizza | Del horno a tu casa",
     };
   },
   scrollToTop: true,
@@ -510,172 +510,172 @@ export default {
           name: "Combo 1",
           price: "$49.90",
           pieces: [{ name: "Pizza chica" }, { name: "Refresco 355ml" }],
-          img: require("@/static/img/pizza.png")
+          img: require("@/static/img/pizza.png"),
         },
         {
           id: 2,
           name: "Combo 2",
           price: "$99.90",
           pieces: [{ name: "Pizza Grande" }, { name: "2 Refrescos 355ml" }],
-          img: require("@/static/img/pizza.png")
+          img: require("@/static/img/pizza.png"),
         },
         {
           id: 3,
           name: "Combo 3",
           price: "$269.90",
           pieces: [{ name: "3 Pizzas Grandes" }, { name: "2 Refrescos 1.5l" }],
-          img: require("@/static/img/pizza.png")
+          img: require("@/static/img/pizza.png"),
         },
         {
           id: 4,
           name: "Combo 4",
           price: "$349.90",
           pieces: [{ name: "4 Pizzas Grandes" }, { name: "3  Refrescos 1.5l" }],
-          img: require("@/static/img/pizza.png")
-        }
+          img: require("@/static/img/pizza.png"),
+        },
       ],
       menu: [
         {
           id: "",
           name: "Hawaiiana",
-          description: "Jamón, piña cereza, ex. queso"
+          description: "Jamón, piña cereza, ex. queso",
         },
         {
           id: "",
           name: "pepperoni",
-          description: "Extra pepperoni extra queso"
+          description: "Extra pepperoni extra queso",
         },
         {
           id: "",
           name: "vegetariana",
-          description: "Champiñon, piña, pimiento,cebolla"
+          description: "Champiñon, piña, pimiento,cebolla",
         },
         {
           id: "",
           name: "Ranchera",
-          description: "Frijol, chorizo, cebolla,jalapeño"
+          description: "Frijol, chorizo, cebolla,jalapeño",
         },
         {
           id: "",
           name: "Carnes frias",
-          description: "Jamón, salchicha, salami, pepperoni "
+          description: "Jamón, salchicha, salami, pepperoni ",
         },
         {
           id: "",
           name: "Burguer",
-          description: "C. molida, salami, tocino, q. amarillo"
+          description: "C. molida, salami, tocino, q. amarillo",
         },
         {
           id: "",
           name: "Mexicana",
-          description: "Chorizo. c. molida, jalapeño, tocino"
+          description: "Chorizo. c. molida, jalapeño, tocino",
         },
         {
           id: "",
           name: "Del mar",
-          description: "Camaron, atun, pimiento, ex. queso"
+          description: "Camaron, atun, pimiento, ex. queso",
         },
         {
           id: "",
           name: "Chickén",
-          description: "Jamón, pollo, champion, ex. queso"
+          description: "Jamón, pollo, champion, ex. queso",
         },
         {
           id: "",
           name: "A la diabla",
-          description: "C. pastor, chipotle, jalapeño, chorizo"
+          description: "C. pastor, chipotle, jalapeño, chorizo",
         },
         {
           id: "",
           name: "Cordón blue",
-          description: "Pollo, jamón, tocino, q. amarillo"
+          description: "Pollo, jamón, tocino, q. amarillo",
         },
         {
           id: "",
           name: "Emperatriz",
-          description: "Pepperoni, pimiento, c. molida, tocina"
+          description: "Pepperoni, pimiento, c. molida, tocina",
         },
         {
           id: "",
           name: "Marina",
-          description: "Atún, elote, pimiento, cebolla"
+          description: "Atún, elote, pimiento, cebolla",
         },
         {
           id: "",
           name: "Norteña",
-          description: "Chorizo, tocino, pimiento, elote"
+          description: "Chorizo, tocino, pimiento, elote",
         },
         {
           id: "",
           name: "Romana",
-          description: "Champoñon, chorizo, jalapeño, tocino"
+          description: "Champoñon, chorizo, jalapeño, tocino",
         },
         {
           id: "",
           name: "Cubana",
-          description: "Jamón, tocino, chorizo, q. amarillo"
+          description: "Jamón, tocino, chorizo, q. amarillo",
         },
         {
           id: "",
           name: "4 quesos",
-          description: "Mozarella, oaxaca, americano, gouda"
+          description: "Mozarella, oaxaca, americano, gouda",
         },
         {
           id: "",
           name: "Kanter",
-          description: "Champiñon, tocino, salami, peperoni"
+          description: "Champiñon, tocino, salami, peperoni",
         },
         {
           id: "",
           name: "Pastor",
-          description: "C. pator, piña, cebolla, tocino"
+          description: "C. pator, piña, cebolla, tocino",
         },
         {
           id: "",
           name: "Hawaiiana VIP",
-          description: "Jamón, piña, jalapeño, tocino"
+          description: "Jamón, piña, jalapeño, tocino",
         },
         {
           id: "",
           name: "Italiana",
-          description: "Jamon, salchicha, salami, pimiento"
+          description: "Jamon, salchicha, salami, pimiento",
         },
         {
           id: "",
           name: "Al gusto",
-          description: "4 ingredientes al gusto"
+          description: "4 ingredientes al gusto",
         },
         {
           id: "",
           name: "Combinación pizza suprema",
           description: "Pruebala!",
-          newProduct: true
+          newProduct: true,
         },
         {
           id: "",
           name: "Alitas",
           description: "adobadas, a la brava, búfalo, mango habanero",
-          img: require("@/static/img/alitas.png")
+          img: require("@/static/img/alitas.png"),
         },
         {
           id: "",
           name: "Papas a las francesa",
           description: "yum!",
-          img: require("@/static/img/papasFrancesa.png")
+          img: require("@/static/img/papasFrancesa.png"),
         },
         {
           id: "",
           name: "Papas en gajos",
           description: "yum!",
-          img: require("@/static/img/papasGajo.png")
-        }
+          img: require("@/static/img/papasGajo.png"),
+        },
       ],
       patternSelect: "pattern1",
       responsiveCarousel: {
         0: { items: 1 },
-        991: { items: 3 }
+        991: { items: 3 },
       },
-      showAllMenu: false
+      showAllMenu: false,
     };
   },
   methods: {
@@ -685,12 +685,12 @@ export default {
     showCombo(event) {
       const element = event.target.closest(".custom-card");
       const elements = document.querySelectorAll(".custom-card");
-      elements.forEach(el => {
+      elements.forEach((el) => {
         el.classList.remove("open");
       });
       element.classList.toggle("open");
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss">
